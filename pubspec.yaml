@@ -1,5 +1,8 @@
 name: sealed_union_demo
 description: A new Flutter project.
+# The 'ignore' field will make sure this package doesn't get featured on the Flutter Community package table and other location.
+# If / Once this package is ready to be released, please remove this field or set it to 'false'.
+ignore: true
 
 dependencies:
   giphy_client: 0.0.1
