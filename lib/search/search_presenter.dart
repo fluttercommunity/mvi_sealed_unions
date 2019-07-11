@@ -19,7 +19,7 @@ class SearchPresenter extends Presenter<SearchModel> {
     final nextPageSubject = PublishSubject<void>(sync: true);
     final updates = Observable<SearchUpdate>.merge([
       querySubject.stream
-          .debounce(Duration(milliseconds: 300))
+          .debounceTime( Duration(milliseconds: 300))
           .distinct()
           .switchMap(interactor.search),
       refreshSubject.stream.flatMap((completer) =>
