@@ -32,8 +32,8 @@ class Presenter<State> extends Stream<State> {
     StreamSubscription<State> subscription;
     BehaviorSubject<State> _subject;
 
-    _subject = BehaviorSubject<State>(
-      seedValue: initialState,
+    _subject = BehaviorSubject<State>.seeded(
+      initialState,
       onListen: () {
         subscription = model.listen(
           _subject.add,

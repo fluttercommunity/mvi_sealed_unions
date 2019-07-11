@@ -3,7 +3,7 @@ import 'package:sealed_union_demo/trending/trending_screen.dart';
 
 void main() {
   // ignore: deprecated_member_use
-  MaterialPageRoute.debugEnableFadingRoutes = true;
+  // MaterialPageRoute.debugEnableFadingRoutes = true;
 
   runApp(MviApp());
 }
